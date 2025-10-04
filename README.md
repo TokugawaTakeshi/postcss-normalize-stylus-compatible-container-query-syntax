@@ -8,7 +8,7 @@ There is no `container` media type, but it is the workaround for Stylus pre-proc
 ## Installation
 
 ```bash
-npm install postcss postcss-normalize-stylus-compatable-container-query-syntax
+npm install postcss postcss-normalize-stylus-compatible-container-query-syntax
 ```
 
 ## Example

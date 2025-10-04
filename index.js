@@ -6,7 +6,7 @@ module.exports = () => {
 
   return {
 
-    postcssPlugin: 'postcss-plugin-normalize_container_query_syntax',
+    postcssPlugin: 'postcss-normalize-stylus-compatible-container-query-syntax',
 
     // Perform a very simple, global string replacement across the whole CSS.
     // It converts Stylus-compatible irregular syntax
