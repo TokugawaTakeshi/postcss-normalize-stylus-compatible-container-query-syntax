@@ -1,0 +1,38 @@
+{
+  "name": "postcss-normalize-stylus-compatable-container-query-syntax",
+  "version": "0.0.0",
+  "description": "PostCSS plugin changing the Stylus-compatable irregular container queries syntax to normal",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "container-query"
+  ],
+  "scripts": {
+    "unit": "node --test index.test.js",
+    "test": "npm run unit && eslint ."
+  },
+  "author": "Takesi Tokugawa <tokugawa.takesi@gmail.com>",
+  "license": "MIT",
+  "repository": "https://github.com/TokugawaTakeshi/postcss-normalize-stylus-compatable-container-query-syntax.git",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "peerDependencies": {
+    "postcss": "^8.4.27"
+  },
+  "devDependencies": {
+    "eslint": "^8.47.0",
+    "postcss": "^8.4.27"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 2017
+    },
+    "env": {
+      "node": true,
+      "es6": true
+    },
+    "extends": [ "eslint:recommended" ]
+  }
+}
