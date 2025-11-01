@@ -21,3 +21,9 @@ test('does not change normal @media rules', async () => {
   const output = input
   await run(input, output)
 })
+
+test('converts complex comma + and syntax to @container with or', async () => {
+  const input = `@media container (max-width: 99.98px), container and (max-height: 99.98px) {\n  .box { color: green; }\n}`
+  const output = `@container (max-width: 99.98px) or (max-height: 99.98px) {\n  .box { color: green; }\n}`
+  await run(input, output)
+})

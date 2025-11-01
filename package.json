@@ -1,6 +1,6 @@
 {
   "name": "postcss-normalize-stylus-compatible-container-query-syntax",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "PostCSS plugin changing the Stylus-compatible irregular container queries syntax to the regular one.",
   "keywords": [
     "postcss",

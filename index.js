@@ -18,7 +18,14 @@ module.exports = () => {
 
       const postcss = require('postcss')
       const original = root.toString()
-      const replaced = original.replaceAll('@media container and', '@container')
+      const replaced = original.
+
+          /* For simple cases like `@media container and (min-width: 600px) {}` */
+          replaceAll('@media container and', '@container').
+
+          /* For complex cases like `@media container (max-width: 99.98px), container and (max-height: 99.98px) {}` */
+          replaceAll('@media container', '@container').
+          replaceAll(/,\s*container\s+and/gu, ' or');
 
       if (replaced !== original) {
         const newRoot = postcss.parse(replaced)
